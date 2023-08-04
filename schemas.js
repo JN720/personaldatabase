@@ -1,7 +1,7 @@
-const mongo = require('mongodb');
+const { Schema } = require('mongodb');
 const fs = require('fs')
 
-letterSchema = new mongo.Schema({
+letterSchema = Schema({
     filename : {
         type : String,
         required : true,
@@ -22,7 +22,7 @@ letterSchema = new mongo.Schema({
     }
 })
 
-voiceSchema = new mongo.Schema({
+voiceSchema = Schema({
     filename : {
         type : String,
         required : true,
